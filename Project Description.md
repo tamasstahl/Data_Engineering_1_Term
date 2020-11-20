@@ -23,7 +23,7 @@ The Olympics raises plenty of questions and interesting ideas, therefore, I trie
 
 #### Question 3: How many medals were won in the sport "Swimming" by Olympic years?
 
-#### Question 4: List of gold medal winners by a country for all Olympics Events. The country should be replacable to look at different countries.
+#### Question 4: When were the first olympic gold medals awarded to Hungary in every sport?
 
 #### Question 5: List of gold winner Hungarian female athletes.
 
@@ -46,37 +46,49 @@ The following solutions were given for the questions asked. For some questions I
 
 Success rate was defined by me as "very successful" country with total medals > 300, "successful" countries between 20 and 300 total medals, and "needs more work" countries with total medals < 20.
 
-
+![](Images/Question%201.png)
 
 #### Question 2: CALL GetMedalsPerSportEvent('1992');
 
 1992 was chosen as this was the only year which had both a Summer and Winter Olympics Game.
 
+![](Images/Question%202.png)
+
 #### Question 3: CALL GetTotalMedalsForSportEventEachYear('Swimming');
 
 I used stored procedure, in order to easily change the sport, if somebody is interested in different sports.
 
-#### Question 4:
+#### Question 4: SELECT * FROM First_Olympic_Golds_Sport;
+
+
 
 #### Question 5: SELECT * FROM Hungary_women_gold_medals;
 
+![](Images/Question%205.png)
+
 #### Question 6: CALL AverageAgeForSports();
+
+![](Images/Question%206.png)
 
 #### Question 7: SELECT * FROM Average_age_and_NumberOfParticipants;
 
-#### Question 8: CALL GetMedalCountByCountry('Hungary', '2016', @total);
-            SELECT @total;
-            
+![](Images/Question%207.png)
+
+#### Question 8: CALL GetMedalCountByCountry('Hungary', '2016', @total); select @total;
+
 I answered this question using a stored procedure, in which the country and year can be changed to any wanted value.
 
 #### Question 9: SELECT * FROM Total_Gold_Medals_In_2016;
 
 Created a view of the top 15 gold medal winner countries in 2016.
 
+![](Images/Question%209.png)
+
 #### Question 10: SELECT * FROM most_successful_athletes;
 
 Created a view of the top 15 athltes in total number of medals won.
 
+![](Images/Question%2010.png)
 
 © 2020 GitHub, Inc.
 
