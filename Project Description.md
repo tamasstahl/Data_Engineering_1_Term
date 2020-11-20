@@ -46,6 +46,8 @@ The following solutions were given for the questions asked. For some questions I
 
 Success rate was defined by me as "very successful" country with total medals > 300, "successful" countries between 20 and 300 total medals, and "needs more work" countries with total medals < 20.
 
+
+
 #### Question 2: CALL GetMedalsPerSportEvent('1992');
 
 1992 was chosen as this was the only year which had both a Summer and Winter Olympics Game.
