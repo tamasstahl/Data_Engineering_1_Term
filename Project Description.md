@@ -33,6 +33,8 @@ The Country dataset contains 3 variables:
 
 The tables were joined through first ID (olympians and events_final) and NOC (olympians and country). As a result of the join it could be noted that some alreay-collapsed nations like Soviet Union disappeared as a Nation. Due to the join on country codes, as several countries had more country codes under them, several countries gained the data. For example the Soviet Union data belongs now under Russia.
 
+![](Images/ERD_Olympics.png)
+
 ## Analytical Layer
 After loading the athletes, events and countries tables to MYSQL Workbench several stored procedures were created to create our final analytical data layer olympics_final. These stroed procedures are the following: 
 
