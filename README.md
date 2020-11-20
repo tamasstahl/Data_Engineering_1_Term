@@ -27,6 +27,9 @@ In addition, a description of the data is provided in the folder.
 
 The whole project is included in one sql code with descriptions and comments for each query. 
 
+#### Images
+
+Visual representation of the analytical questions asked during my project, which were embedded in the Term project description. 
 
 #### ERD
 
