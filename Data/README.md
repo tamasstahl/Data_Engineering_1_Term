@@ -1,7 +1,9 @@
 # Description of the data
 
 ## Overview
-The 120 Years of Olympic History: Athletes and Results has been uploaded to Kaggle.com and falls under the Creative Commons License. The dataset consisted of two tables; athlete_events.csv and noc_regions.csv. For the purpose of showing my knowledge of joins and understanding relational datasets, athlete_events.csv was divided by me to two separate CSV, olympians.csv and events_final.csv. The olympians.csv dataset contains information about Olympic Athletes including biological data (Age, Sex, Height, Weight) and data about year participated and nation. The events_final.csv dataset contains data about the specific Olympic Events (Year, Season, City, Sport etc.). The Country.csv dataset includes the country code (issued by the National Organizing Committee) and name of the participating countries as well as some notes.
+The 120 Years of Olympic History: Athletes and Results has been uploaded to Kaggle.com and falls under the Creative Commons License. The dataset consists of two tables; athlete_events.csv and noc_regions.csv. For the purpose of showing my knowledge and understanding of relational datasets, athlete_events.csv was divided by me to two separate CSVs, olympians.csv and events_final.csv. 
+
+The olympians.csv dataset contains information about Olympic Athletes including biological data (Age, Sex, Height, Weight) and data about year participated and nation. The events_final.csv dataset contains data about the specific Olympic Events (Year, Season, City, Sport etc.). The Country.csv dataset includes the country code (issued by the National Organizing Committee) and name of the participating countries as well as some notes.
 
 ## Contents of the datasets
 The Olympians dataset contains 9 variables:
