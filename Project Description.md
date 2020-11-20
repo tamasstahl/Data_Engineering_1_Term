@@ -2,6 +2,7 @@
 
 ## Operational Layer
 
+
 ## Analytical Layer
 After loading the athletes, events and countries tables to MYSQL Workbench several stored procedures were created to create our final analytical data layer olympics_final. These stroed procedures are the following: 
 
@@ -70,7 +71,7 @@ I used stored procedure, in order to easily change the sport, if somebody is int
 
 #### Question 6: CALL AverageAgeForSports();
 
-![](Images/Question%206.png)
+![](Images/Question_6.png)
 
 #### Question 7: SELECT * FROM Average_age_and_NumberOfParticipants;
 
