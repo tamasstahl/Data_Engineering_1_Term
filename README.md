@@ -10,7 +10,7 @@ The purpose of this project was to show my knowledge learnt during Data Engineer
 
 #### Term Project Description
 
-This folder contains the description of the operational and analytical data layer, comments on ETL procedure, problemas faced during the course of the project.
+This folder contains the description of the operational and analytical data layer, comments on ETL procedure, problemas faced during the course of the project. This subject (Olympics in 120 yaers) raises many questions and issues, which is a perfect opportunity to answer several interesting questions. Some questions occured to me when I was ansering another one. Please see the content of this folder for more information.
 
 #### Data
 
