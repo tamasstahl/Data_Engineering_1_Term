@@ -4,7 +4,7 @@
 
 ### Purpose of the project
 
-The purpose of this project was to show my knowledge learnt during Data Engineering 1 course and my ability to use MySQL.
+The purpose of this project was to show my knowledge acquired during Data Engineering 1 course and my ability to use MySQL and queries.
 
 ### Contents 
 
