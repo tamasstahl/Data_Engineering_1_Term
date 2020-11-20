@@ -60,9 +60,9 @@ The Olympics raises plenty of questions and interesting ideas, therefore, I trie
 
 #### Question 5: List of gold winner Hungarian female athletes.
 
-#### Question 6: What was the average age of female and male athletes per sport?
+#### Question 6: What were the average age of female and male athletes per sport?
 
-#### Question 7: What was the top 10 youngest average age sports?
+#### Question 7: What were the top 10 youngest average age sports?
 
 #### Question 8: How many Gold/Silver/Bronze medals were won by a contry in a given year?
 
