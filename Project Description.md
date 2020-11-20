@@ -2,6 +2,36 @@
 
 ## Operational Layer
 
+The Olympians dataset contains 9 variables:
+
+* ID: A number used as a unique identifier for each athlete
+* Name: The athlete’s name(s) in the form of First Middle Last where available
+* Sex: The athlete’s gender; one of M or F
+* Age: The athlete’s age in years
+* Height: The athlete’s height in centimeters (cm)
+* Weight: The athlete’s weight in kilograms (kg)
+* Team: The name of the team that the athlete competed for
+* NOC: The National Organizing Committee’s 3-letter code
+* Year: The year of the Olympics that the athlete competed in
+
+The events_final dataset contains 8 variables:
+
+* ID: A number used as a unique identifier for each athlete
+* Games: The year and season of the Olympics the athlete competed in in the format YYYY Season
+* Year: The year of the Olympics that the athlete competed in
+* Season: The season of the Olympics that the athlete competed in
+* City: The city that hosted the Olympics that the athlete competed in
+* Sport: The sport that the athlete competed in
+* Event: The event that the athlete competed in
+* Medal: The medal won by the athlete; one of Gold, Silver, or Bronze. NA if no medal was won.
+
+The Country dataset contains 3 variables:
+
+* NOC: The National Organizing Committee’s 3-letter code
+* region: The name of the country/region associated with the NOC code
+* notes: Any extra/miscellaneous information about the NOC region
+
+The tables were joined through first ID (olympians and events_final) and NOC (olympians and country). As a result of the join it could be noted that some alreay-collapsed nations like Soviet Union disappeared as a Nation. Due to the join on country codes, as several countries had more country codes under them, several countries gained the data. For example the Soviet Union data belongs now under Russia.
 
 ## Analytical Layer
 After loading the athletes, events and countries tables to MYSQL Workbench several stored procedures were created to create our final analytical data layer olympics_final. These stroed procedures are the following: 
