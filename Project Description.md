@@ -1,1 +1,80 @@
-# Project Description
+# Data Engineering 1 Term Project
+
+## Operational Layer
+
+## Analytical Layer
+After loading the athletes, events and countries tables to MYSQL Workbench several stored procedures were created to create our final analytical data layer olympics_final. These stroed procedures are the following: 
+
+1. CreateOlympicsDataset() creates table olympics that has several issues that need to be atended.
+
+After calling CreateOlympicDataset() I looked for duplicates, and a significant number of duplicates were spotted. In order to exclude these duplicates a new table, olympics_final was created with a simple query. However further data cleaning was necessary to achieve a useful analytical layer.
+
+2. CleaningData1() replaces 'M' and 'F' to 'Male' and 'Female' respectively. 
+
+3. CleaningData2() replaces all null values for age, height and weight with the average values of age, height and weight by both Male and Female.  
+
+### Analytical Questions
+
+The Olympics raises plenty of questions and interesting ideas, therefore, I tried to look into several different aspects of Olympics.
+
+Question 1: What is the ranking of countries based on total medal counts? Also would like to visualize the number of distinct athletes that won the medals and the number of total participants.
+
+Question 2: How many total medals did the athletes win by sports in a given year? This given year is 1992.
+
+Question 3: How many medals were won in the sport "Swimming" by Olympic years?
+
+Question 4: List of gold medal winners by a country for all Olympics Events. The country should be replacable to look at different countries.
+
+Question 5: List of gold winner Hungarian female athletes.
+
+Question 6: What was the average age of female and male athletes per sport?
+
+Question 7: What was the top 10 youngest average age sports?
+
+Question 8: How many Gold/Silver/Bronze medals were won by a contry in a given year?
+
+Question 9: Who were the top 15 gold medal winner countries in 2016?
+
+Question 10: Who were the top 15 atheltes in total number of medals won? Most succesful athletes?
+
+
+### Data Marts
+The following solutions were given for the questions asked. For some questions I found a stored procedure to be more informative as the parameters could be changed in light of the wish of the viewer.
+
+#### Solutions
+Question 1: CALL MedalRanking();
+
+Success rate was defined by me as "very successful" country with total medals > 300, "successful" countries between 20 and 300 total medals, and "needs more work" countries with total medals < 20.
+
+Question 2: CALL GetMedalsPerSportEvent('1992');
+
+1992 was chosen as this was the only year which had both a Summer and Winter Olympics Game.
+
+Question 3: CALL GetTotalMedalsForSportEventEachYear('Swimming');
+
+I used stored procedure, in order to easily change the sport, if somebody is interested in different sports.
+
+Question 4:
+
+Question 5: SELECT * FROM Hungary_women_gold_medals;
+
+Question 6: CALL AverageAgeForSports();
+
+Question 7: SELECT * FROM Average_age_and_NumberOfParticipants;
+
+Question 8: CALL GetMedalCountByCountry('Hungary', '2016', @total);
+            SELECT @total;
+            
+I answered this question using a stored procedure, in which the country and year can be changed to any wanted value.
+
+Question 9: SELECT * FROM Total_Gold_Medals_In_2016;
+
+Created a view of the top 15 gold medal winner countries in 2016.
+
+Question 10: SELECT * FROM most_successful_athletes;
+
+Created a view of the top 15 athltes in total number of medals won.
+
+
+© 2020 GitHub, Inc.
+
