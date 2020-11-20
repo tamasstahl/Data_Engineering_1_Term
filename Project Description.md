@@ -58,9 +58,11 @@ Success rate was defined by me as "very successful" country with total medals > 
 
 I used stored procedure, in order to easily change the sport, if somebody is interested in different sports.
 
+![](Images/Question%203.png)
+
 #### Question 4: SELECT * FROM First_Olympic_Golds_Sport;
 
-
+![](Images/Question%204.png)
 
 #### Question 5: SELECT * FROM Hungary_women_gold_medals;
 
